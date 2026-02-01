@@ -1,0 +1,9 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a24"/>
+  <rect x="300" y="180" width="200" height="280" fill="#4b5563" rx="4"/>
+  <polygon points="440,180 500,180 500,240 440,240" fill="#00e5ff"/>
+  <polygon points="440,240 500,180 500,240" fill="#0097a7"/>
+  <polygon points="320,380 380,380 380,440 320,440" fill="#7c4dff"/>
+  <polygon points="320,380 380,440 320,440" fill="#5c35cc"/>
+  <text x="400" y="520" font-family="system-ui, sans-serif" font-size="20" fill="#606070" text-anchor="middle">Corner Bookmarks</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a24"/>
+  <polygon points="300,200 350,150 350,250" fill="#374151" stroke="#00e5ff" stroke-width="2"/>
+  <polygon points="400,200 450,150 450,250" fill="#374151" stroke="#7c4dff" stroke-width="2"/>
+  <polygon points="500,200 550,150 550,250" fill="#374151" stroke="#ff9100" stroke-width="2"/>
+  <path d="M350 250 Q350 320 300 350" stroke="#00e5ff" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M450 250 Q450 320 400 350" stroke="#7c4dff" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M550 250 Q550 320 500 350" stroke="#ff9100" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <text x="400" y="480" font-family="system-ui, sans-serif" font-size="20" fill="#606070" text-anchor="middle">Wall Hooks</text>
+</svg>

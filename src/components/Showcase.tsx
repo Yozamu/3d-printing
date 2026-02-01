@@ -1,12 +1,23 @@
+'use client';
+
+import { useState } from 'react';
 import { Print } from '@/types';
 import ShowcaseCard from './ShowcaseCard';
-import { Box } from 'lucide-react';
+import { Box, ChevronDown, ChevronUp } from 'lucide-react';
 
 interface ShowcaseProps {
   prints: Print[];
 }
 
+const INITIAL_DISPLAY_COUNT = 6;
+
 export default function Showcase({ prints }: ShowcaseProps) {
+  const [showAll, setShowAll] = useState(false);
+
+  const displayedPrints = showAll ? prints : prints.slice(0, INITIAL_DISPLAY_COUNT);
+  const hasMore = prints.length > INITIAL_DISPLAY_COUNT;
+  const remainingCount = prints.length - INITIAL_DISPLAY_COUNT;
+
   return (
     <section id="showcase" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background */}
@@ -38,11 +49,39 @@ export default function Showcase({ prints }: ShowcaseProps) {
 
         {/* Cards grid */}
         {prints.length > 0 ? (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {prints.map((print, index) => (
-              <ShowcaseCard key={print.slug} print={print} index={index} />
-            ))}
-          </div>
+          <>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+              {displayedPrints.map((print, index) => (
+                <ShowcaseCard key={print.slug} print={print} index={index} />
+              ))}
+            </div>
+
+            {/* Show More / Show Less Button */}
+            {hasMore && (
+              <div className="mt-12 text-center">
+                <button
+                  onClick={() => setShowAll(!showAll)}
+                  className="group inline-flex items-center gap-3 px-8 py-4 rounded-full border border-[var(--bg-tertiary)] bg-[var(--bg-card)] hover:border-[var(--accent-primary)]/50 hover:bg-[var(--bg-tertiary)] transition-all duration-300"
+                >
+                  <span className="text-[var(--text-secondary)] group-hover:text-[var(--accent-primary)] transition-colors font-medium">
+                    {showAll ? 'Show Less' : `Show ${remainingCount} More`}
+                  </span>
+                  {showAll ? (
+                    <ChevronUp className="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent-primary)] transition-colors" />
+                  ) : (
+                    <ChevronDown className="w-5 h-5 text-[var(--text-muted)] group-hover:text-[var(--accent-primary)] transition-colors" />
+                  )}
+                </button>
+              </div>
+            )}
+
+            {/* Count indicator */}
+            <div className="mt-8 text-center">
+              <span className="text-sm text-[var(--text-muted)]">
+                Showing {displayedPrints.length} of {prints.length} prints
+              </span>
+            </div>
+          </>
         ) : (
           <div className="text-center py-20 rounded-2xl border border-dashed border-[var(--bg-tertiary)] bg-[var(--bg-secondary)]/50">
             <Box className="w-16 h-16 text-[var(--text-muted)] mx-auto mb-4" />
@@ -53,15 +92,6 @@ export default function Showcase({ prints }: ShowcaseProps) {
               </code>{' '}
               to get started.
             </p>
-          </div>
-        )}
-
-        {/* View all link (placeholder for future) */}
-        {prints.length > 0 && (
-          <div className="mt-12 text-center">
-            <span className="text-sm text-[var(--text-muted)]">
-              Showing {prints.length} prints
-            </span>
           </div>
         )}
       </div>

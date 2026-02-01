@@ -1,0 +1,11 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a24"/>
+  <rect x="280" y="280" width="60" height="40" rx="8" fill="#374151" stroke="#00e5ff" stroke-width="2"/>
+  <circle cx="310" cy="300" r="8" fill="#1a1a24"/>
+  <rect x="370" y="280" width="60" height="40" rx="8" fill="#374151" stroke="#7c4dff" stroke-width="2"/>
+  <circle cx="400" cy="300" r="8" fill="#1a1a24"/>
+  <rect x="460" y="280" width="60" height="40" rx="8" fill="#374151" stroke="#ff9100" stroke-width="2"/>
+  <circle cx="490" cy="300" r="8" fill="#1a1a24"/>
+  <path d="M310 300 Q310 350 340 350 Q370 350 400 300 Q430 350 460 350 Q490 350 490 300" stroke="#606070" stroke-width="4" fill="none"/>
+  <text x="400" y="450" font-family="system-ui, sans-serif" font-size="20" fill="#606070" text-anchor="middle">Cable Clips</text>
+</svg>

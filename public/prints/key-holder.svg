@@ -1,0 +1,12 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a24"/>
+  <rect x="250" y="220" width="300" height="60" rx="8" fill="#374151" stroke="#00e5ff" stroke-width="2"/>
+  <circle cx="310" cy="250" r="15" fill="#4b5563" stroke="#00e5ff" stroke-width="1"/>
+  <circle cx="400" cy="250" r="15" fill="#4b5563" stroke="#7c4dff" stroke-width="1"/>
+  <circle cx="490" cy="250" r="15" fill="#4b5563" stroke="#ff9100" stroke-width="1"/>
+  <path d="M310 280 L310 340 L290 340 L290 360 L330 360 L330 340 L310 340" stroke="#a0a0b0" stroke-width="3" fill="none"/>
+  <circle cx="310" cy="320" r="12" fill="none" stroke="#a0a0b0" stroke-width="3"/>
+  <path d="M490 280 L490 350 L470 350 L470 370 L510 370 L510 350 L490 350" stroke="#a0a0b0" stroke-width="3" fill="none"/>
+  <circle cx="490" cy="330" r="12" fill="none" stroke="#a0a0b0" stroke-width="3"/>
+  <text x="400" y="460" font-family="system-ui, sans-serif" font-size="20" fill="#606070" text-anchor="middle">Magnetic Key Holder</text>
+</svg>

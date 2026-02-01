@@ -1,0 +1,10 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a24"/>
+  <polygon points="400,180 470,220 470,300 400,340 330,300 330,220" fill="#374151" stroke="#00e5ff" stroke-width="2"/>
+  <polygon points="480,220 550,260 550,340 480,380 410,340 410,260" fill="#374151" stroke="#7c4dff" stroke-width="2"/>
+  <polygon points="320,220 390,260 390,340 320,380 250,340 250,260" fill="#374151" stroke="#ff9100" stroke-width="2"/>
+  <circle cx="400" cy="250" r="25" fill="#22c55e"/>
+  <circle cx="480" cy="300" r="20" fill="#16a34a"/>
+  <circle cx="320" cy="300" r="22" fill="#4ade80"/>
+  <text x="400" y="480" font-family="system-ui, sans-serif" font-size="20" fill="#606070" text-anchor="middle">Hexagonal Planters</text>
+</svg>

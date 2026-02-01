@@ -1,0 +1,11 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" fill="#1a1a24"/>
+  <ellipse cx="400" cy="400" rx="80" ry="20" fill="#374151"/>
+  <path d="M320 400 Q320 200 400 180 Q480 200 480 400" fill="none" stroke="#00e5ff" stroke-width="3"/>
+  <path d="M340 400 Q380 220 420 400" fill="none" stroke="#7c4dff" stroke-width="2"/>
+  <path d="M360 400 Q400 250 440 400" fill="none" stroke="#ff9100" stroke-width="2"/>
+  <rect x="390" y="160" width="8" height="100" fill="#4b5563"/>
+  <rect x="410" y="180" width="6" height="80" fill="#606070"/>
+  <rect x="378" y="170" width="6" height="90" fill="#606070"/>
+  <text x="400" y="480" font-family="system-ui, sans-serif" font-size="20" fill="#606070" text-anchor="middle">Twisted Pen Holder</text>
+</svg>
