@@ -62,18 +62,18 @@ function LayerLines() {
   );
 }
 
-// Nozzle/print head indicator
-function PrintHead() {
+// Vertical accent line with dot (replaces PrintHead - matches cyan theme)
+function VerticalAccent() {
   return (
     <div className="absolute right-8 md:right-16 top-1/3 flex flex-col items-center gap-2">
       <div
-        className="w-4 h-4 md:w-6 md:h-6 bg-[var(--accent-secondary)] rounded-sm"
+        className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-[var(--accent-primary)]"
         style={{
-          boxShadow: '0 0 20px var(--accent-secondary), 0 0 40px rgba(255, 145, 0, 0.3)',
+          boxShadow: '0 0 20px var(--accent-glow), 0 0 40px var(--accent-glow)',
           animation: 'pulse-glow 2s ease-in-out infinite',
         }}
       />
-      <div className="w-[2px] h-16 md:h-24 bg-gradient-to-b from-[var(--accent-secondary)] to-transparent opacity-60" />
+      <div className="w-[2px] h-16 md:h-24 bg-gradient-to-b from-[var(--accent-primary)] to-transparent opacity-40" />
     </div>
   );
 }
@@ -123,7 +123,7 @@ export default function Hero() {
           <FloatingShape type="layers" className="bottom-[30%] left-[15%]" delay={3} />
           <FloatingShape type="box" className="top-[60%] right-[10%] hidden lg:block" delay={2.5} />
           <LayerLines />
-          <PrintHead />
+          <VerticalAccent />
         </>
       )}
 
@@ -143,13 +143,17 @@ export default function Hero() {
 
         {/* Main headline */}
         <h1
-          className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 transition-all duration-700 delay-100 ${
+          className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 transition-all duration-700 delay-100 ${
             mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
           <span className="block text-[var(--text-primary)]">Ideas Made</span>
           <span
-            className="block bg-gradient-to-r from-[var(--accent-primary)] via-[var(--gradient-end)] to-[var(--accent-secondary)] bg-clip-text text-transparent glow-text"
+            className="block py-2 bg-gradient-to-r from-[var(--accent-primary)] via-[var(--gradient-end)] to-[var(--accent-primary)] bg-clip-text text-transparent"
+            style={{
+              textShadow: '0 0 80px var(--accent-glow)',
+              filter: 'drop-shadow(0 0 30px var(--accent-glow))',
+            }}
           >
             Tangible
           </span>
